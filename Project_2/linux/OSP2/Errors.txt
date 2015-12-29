@@ -1,0 +1,44 @@
+Error commands in batch mode
+ls >ls5.txt ffff
+An error has occurred
+ls: cannot access ls5.txt: No such file or directory
+ls > ls7.txt ffff
+An error has occurred
+ls: cannot access ls7.txt: No such file or directory
+ls -l>ls8.txt
+An error has occurred
+ls -l >ls9.txt
+An error has occurred
+ls -l>ls10.txt
+An error has occurred
+ls -l > ls11.txt
+An error has occurred
+ls -l>ls12.txt ffff
+An error has occurred
+ls: cannot access ls12.txt: No such file or directory
+ls -l >ls13.txt ffff
+An error has occurred
+ls: cannot access ls13.txt: No such file or directory
+ls -l>ls14.txt ffff
+An error has occurred
+ls: cannot access ls14.txt: No such file or directory
+ls -l > ls15.txt ffff
+An error has occurred
+ls: cannot access ls15.txt: No such file or directory
+history>history1.txt
+An error has occurred
+history >history2.txt
+An error has occurred
+history> history3.txt
+An error has occurred
+history > history4.txt
+An error has occurred
+whoami>history5.txt
+An error has occurred
+whoami>history6.txt
+An error has occurred
+whoami> history7.txt
+An error has occurred
+whoami> history8.txt
+An error has occurred
+

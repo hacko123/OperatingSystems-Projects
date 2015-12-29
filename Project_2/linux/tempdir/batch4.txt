@@ -1,0 +1,26 @@
+pwd
+hwllo
+ls -l > new.txt
+avfd
+pwd
+pwd
+pwd
+whoami
+histroy
+history >xyz.txt
+dfgsdg
+sg
+sg
+srgsr
+ufeso
+ls -r>i.txt
+gsd
+pwd
+pwd
+pwd
+gdslkgs'
+nksdg
+ls > o.txt p.txt
+!1
+! 2
+exit

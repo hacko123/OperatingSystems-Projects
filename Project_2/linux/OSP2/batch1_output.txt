@@ -1,0 +1,151 @@
+ashok
+ashok_mysh.c
+batch1_output.txt
+batch1.txt
+batch2.txt
+batch2.txt~
+batch3.txt
+batch4.txt
+batch4.txt~
+mysh
+mysh1
+mysh.c
+mysh.c~
+mysh_v1.0.c
+new
+strreplace
+total 156
+-rwxrwxr-x 1 kavin kavin 14882 Sep 25 13:51 ashok
+-rw-rw-rw- 1 kavin kavin  5203 Sep 25 13:51 ashok_mysh.c
+-rw-r--r-- 1 root  root    158 Sep 27 21:29 batch1_output.txt
+-rw-rw-rw- 1 kavin kavin   485 Sep 27 21:28 batch1.txt
+-rw-rw-r-- 1 kavin kavin    56 Sep 27 17:29 batch2.txt
+-rw-rw-r-- 1 kavin kavin    37 Sep 26 02:15 batch2.txt~
+-rw-rw-rw- 1 kavin kavin   237 Sep 27 21:06 batch3.txt
+-rw-rw-r-- 1 kavin kavin    78 Sep 27 17:55 batch4.txt
+-rw-rw-r-- 1 kavin kavin     0 Sep 27 17:53 batch4.txt~
+-rwx------ 1 root  root      0 Sep 27 21:29 ffff
+-rwx------ 1 root  root    166 Sep 27 21:29 ls1.txt
+-rwx------ 1 root  root    174 Sep 27 21:29 ls2.txt
+-rwx------ 1 root  root    182 Sep 27 21:29 ls3.txt
+-rwx------ 1 root  root    190 Sep 27 21:29 ls4.txt
+-rwx------ 1 root  root    208 Sep 27 21:29 ls6.txt ffff
+-rwxr-xr-x 1 root  root  19696 Sep 27 21:18 mysh
+-rwxrwxr-x 1 kavin kavin 19338 Sep 25 23:53 mysh1
+-rw-rw-r-- 1 kavin kavin 12498 Sep 27 21:18 mysh.c
+-rw-rw-r-- 1 kavin kavin     0 Sep 23 17:29 mysh.c~
+-rw-rw-r-- 1 kavin kavin 12292 Sep 27 20:59 mysh_v1.0.c
+drwxrwxr-x 2 kavin kavin  4096 Sep 25 07:45 new
+-rwxr-xr-x 1 root  root   9133 Sep 27 20:31 strreplace
+-rwx------ 1 root root 0 Sep 27 21:29 ffff
+/home/kavin/OSP2
+root
+ls 
+ls>ls1.txt
+ls >ls2.txt
+ls> ls3.txt
+ls > ls4.txt
+ls ffff
+ls>ls4.txt ffff
+ls >ls5.txt ffff
+ls> ls6.txt ffff
+ls > ls7.txt ffff
+ls -l
+ls -l>ls8.txt
+ls -l >ls9.txt
+ls -l>ls10.txt
+ls -l > ls11.txt
+ls -l ffff
+ls -l>ls12.txt ffff
+ls -l >ls13.txt ffff
+ls -l>ls14.txt ffff
+ls -l > ls15.txt ffff
+pwd
+whoami
+history
+4 ls> ls3.txt
+5 ls > ls4.txt
+6 ls ffff
+7 ls>ls4.txt ffff
+8 ls >ls5.txt ffff
+9 ls> ls6.txt ffff
+10 ls > ls7.txt ffff
+11 ls -l
+12 ls -l>ls8.txt
+13 ls -l >ls9.txt
+14 ls -l>ls10.txt
+15 ls -l > ls11.txt
+16 ls -l ffff
+17 ls -l>ls12.txt ffff
+18 ls -l >ls13.txt ffff
+19 ls -l>ls14.txt ffff
+20 ls -l > ls15.txt ffff
+21 pwd
+22 whoami
+23 history
+Sun Sep 27 21:29:36 CDT 2015
+ls 
+ls>ls1.txt
+ls >ls2.txt
+ls> ls3.txt
+ls > ls4.txt
+ls ffff
+ls>ls4.txt ffff
+ls >ls5.txt ffff
+ls> ls6.txt ffff
+ls > ls7.txt ffff
+ls -l
+ls -l>ls8.txt
+ls -l >ls9.txt
+ls -l>ls10.txt
+ls -l > ls11.txt
+ls -l ffff
+ls -l>ls12.txt ffff
+ls -l >ls13.txt ffff
+ls -l>ls14.txt ffff
+ls -l > ls15.txt ffff
+pwd
+whoami
+history
+date
+history>history1.txt
+history >history2.txt
+history> history3.txt
+history > history4.txt
+!1
+/home/kavin/OSP2
+ls 
+ls>ls1.txt
+ls >ls2.txt
+ls> ls3.txt
+ls > ls4.txt
+ls ffff
+ls>ls4.txt ffff
+ls >ls5.txt ffff
+ls> ls6.txt ffff
+ls > ls7.txt ffff
+ls -l
+ls -l>ls8.txt
+ls -l >ls9.txt
+ls -l>ls10.txt
+ls -l > ls11.txt
+ls -l ffff
+ls -l>ls12.txt ffff
+ls -l >ls13.txt ffff
+ls -l>ls14.txt ffff
+ls -l > ls15.txt ffff
+pwd
+whoami
+history
+date
+history>history1.txt
+history >history2.txt
+history> history3.txt
+history > history4.txt
+!1
+ls -l>ls8.txt
+pwd
+whoami>history5.txt
+whoami>history6.txt
+whoami> history7.txt
+whoami> history8.txt

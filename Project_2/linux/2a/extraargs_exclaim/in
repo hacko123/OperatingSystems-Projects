@@ -1,0 +1,3 @@
+echo test
+/bin/ls /bin/
+! 2 > 1.txt

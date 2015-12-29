@@ -1,0 +1,154 @@
+starting extraargs_exclaim		// ! 2 > file.txt is a valid case
+
+**********************************************************************
+
+Test extraargs_exclaim
+passing extra args to !
+
+**********************************************************************
+././mysh /u/c/s/cs537-1/ta/tests/2a/extraargs_exclaim/in
+Failure: ./mysh gave incorrect standard error.
+Expected: "An error has occurred\n"
+Got:      ""
+
+
+test extraargs_exclaim FAILED
+ (passing extra args to !)
+ ./mysh gave incorrect standard error.
+
+starting extraargs_hist
+
+**********************************************************************
+
+
+starting basic_hist		// changed error message print to STRERR_FILENO
+
+**********************************************************************
+
+Test basic_hist
+access to an index older than last 20 entries
+
+**********************************************************************
+././mysh /u/c/s/cs537-1/ta/tests/2a/basic_hist/in
+Failure: ./mysh gave incorrect standard error.
+Expected: "An error has occurred\n"
+Got:      ""
+
+
+test basic_hist FAILED
+ (access to an index older than last 20 entries)
+ ./mysh gave incorrect standard error.
+
+ starting badprog	// changed error message print to STRERR_FILENO
+
+**********************************************************************
+
+Test badprog
+bad executable path as command
+
+**********************************************************************
+././mysh /u/c/s/cs537-1/ta/tests/2a/badprog/in
+Failure: ./mysh gave incorrect standard error.
+Expected: "An error has occurred\n"
+Got:      ""
+
+
+test badprog FAILED
+ (bad executable path as command)
+ ./mysh gave incorrect standard error.
+
+ starting toolong  // expected output didnt assume that batch file processing should print the batch command and then print the output and thats what mysh does below
+
+**********************************************************************
+
+Test toolong
+a line that is too long
+
+**********************************************************************
+././mysh /u/c/s/cs537-1/ta/tests/2a/toolong/in
+Failure: ./mysh gave incorrect standard output.
+Expected: "echo 000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001111111111222222222233333333334444444444555555555566666666667777777777888888888899999999990000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001111111111222222222233333333334444444444555555555566666666667777777777888888888899999999990000000000051\nuname\nLinux\n"
+Got:      "echo 0000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001111111111222222222233333333334444444444555555555566666666667777777777888888888899999999990000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000000513\n0000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001111111111222222222233333333334444444444555555555566666666667777777777888888888899999999990000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000000513\nuname\nLinux\n"
+
+
+test toolong FAILED
+ (a line that is too long)
+ ./mysh gave incorrect standard output.
+
+ starting extraargs_hist 	// changed error message print to STRERR_FILENO
+
+**********************************************************************
+
+Test extraargs_hist
+passing extra args to history
+
+**********************************************************************
+././mysh /u/c/s/cs537-1/ta/tests/2a/extraargs_hist/in
+Failure: ./mysh gave incorrect standard error.
+Expected: "An error has occurred\n"
+Got:      ""
+
+
+test extraargs_hist FAILED
+ (passing extra args to history)
+ ./mysh gave incorrect standard error.
+
+starting hist1
+
+**********************************************************************
+
+starting valid_hist   // ls > file1 file2 should not work according to the project descroption but test case assumes it should work and thats why this case failed
+
+**********************************************************************
+
+Test valid_hist
+to check if the commands entered in history have correct syntax
+
+**********************************************************************
+././mysh /u/c/s/cs537-1/ta/tests/2a/valid_hist/in
+Failure: ./mysh gave incorrect standard output.
+Expected: "echo check hist data\ncheck hist data\nls > 1.txt 2.txt\nhistory\n1 echo check hist data\n2 history\n"
+Got:      "echo check hist data\ncheck hist data\nls > 1.txt 2.txt\nAn error has occurred\nhistory\n1 echo check hist data\n2 ls > 1.txt 2.txt\n3 history\n"
+
+
+test valid_hist FAILED
+ (to check if the commands entered in history have correct syntax)
+ ./mysh gave incorrect standard output.
+
+
+ starting badredir //valid case and when its run as root redirection works and when its run as non root it gives correct expected output
+
+**********************************************************************
+
+Test badredir
+redirect to invalid path
+
+**********************************************************************
+././mysh /u/c/s/cs537-1/ta/tests/2a/badredir/in
+Failure: ./mysh gave incorrect standard error.
+Expected: "An error has occurred\n"
+Got:      "/bin/ls: write error: Bad file descriptor\n"
+
+
+test badredir FAILED
+ (redirect to invalid path)
+ ./mysh gave incorrect standard error.
+
+
+ starting badredir2  // ls > file1 file2 should not work according to the project descroption but test case assumes it should work and thats why this case failed
+
+**********************************************************************
+
+Test badredir2
+redirect to multiple paths
+
+**********************************************************************
+././mysh /u/c/s/cs537-1/ta/tests/2a/badredir2/in
+Failure: ./mysh gave incorrect standard output.
+Expected: "/bin/ls > 1.out 2.out\nuname\nLinux\n"
+Got:      "/bin/ls > 1.out 2.out\nAn error has occurred\nuname\nLinux\n"
+
+
+test badredir2 FAILED
+ (redirect to multiple paths)
+ ./mysh gave incorrect standard output.

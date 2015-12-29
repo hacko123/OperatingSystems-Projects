@@ -1,0 +1,27 @@
+ls -l>ls8.txt
+An error has occurred
+ls -l >ls9.txt
+An error has occurred
+ls -l>ls10.txt
+An error has occurred
+ls -l > ls11.txt
+An error has occurred
+history>history1.txt
+An error has occurred
+history >history2.txt
+An error has occurred
+history> history3.txt
+An error has occurred
+history > history4.txt
+An error has occurred
+!1
+ls -l>ls8.txt
+An error has occurred
+whoami>history5.txt
+An error has occurred
+whoami>history6.txt
+An error has occurred
+whoami> history7.txt
+An error has occurred
+whoami> history8.txt
+An error has occurred

@@ -1,0 +1,11 @@
+ls -a
+pwd
+whoami
+ ! 3
+history
+history >his.txt
+!3 31
+pwd
+ls -l> ls.txt
+exit 
+

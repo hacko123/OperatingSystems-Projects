@@ -1,0 +1,10 @@
+total 50
+-rwxrwxrwx 1 ashokmarannan ashokmarannan    37 Sep 25 01:55 batch_file_1.txt
+-rwxrwxrwx 1 ashokmarannan ashokmarannan     0 Sep 25 01:56 batch_file_2.txt
+-rwxrwxrwx 1 ashokmarannan ashokmarannan 18392 Sep 25 02:07 mysh
+-rwxrwxrwx 1 ashokmarannan ashokmarannan  4119 Sep 25 00:19 mysh_1.c
+-rwxrwxrwx 1 ashokmarannan ashokmarannan  4931 Sep 25 02:07 mysh.c
+-rwxrwxrwx 1 ashokmarannan ashokmarannan     0 Sep 25 02:08 out.txt
+-rwxrwxrwx 1 ashokmarannan ashokmarannan  9888 Sep 23 17:58 Strtok
+-rwxrwxrwx 1 ashokmarannan ashokmarannan   564 Sep 23 17:58 Strtok.c
+drwxrwxrwx 1 ashokmarannan ashokmarannan     0 Sep 23 09:54 tempdir

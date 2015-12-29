@@ -1,0 +1,36 @@
+ls 
+ls>ls1.txt
+ls >ls2.txt
+ls> ls3.txt
+ls > ls4.txt
+ls ffff
+ls>ls4.txt ffff
+ls >ls5.txt ffff
+ls> ls6.txt ffff
+ls > ls7.txt ffff
+ls -l
+ls -l>ls8.txt
+ls -l >ls9.txt
+ls -l> ls10.txt
+ls -l > ls11.txt
+ls -l ffff
+ls -l>ls12.txt ffff
+ls -l >ls13.txt ffff
+ls -l>ls14.txt ffff
+ls -l > ls15.txt ffff
+pwd
+whoami
+history
+date
+history>history1.txt
+history >history2.txt
+history> history3.txt
+history > history4.txt
+!1
+!12
+!21
+!22>history5.txt
+!22 >history6.txt
+!22> history7.txt
+!22 > history8.txt
+

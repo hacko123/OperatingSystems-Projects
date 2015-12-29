@@ -1,0 +1,4 @@
+ls -l>ls8.txt
+ls -l >ls9.txt
+ls -l> ls10.txt
+ls -l > ls11.txt

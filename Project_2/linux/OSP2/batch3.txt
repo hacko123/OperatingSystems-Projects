@@ -1,0 +1,21 @@
+abc.txt
+pwd
+ls -p
+ls -r
+cat new.txt
+history > new.txt gdfg
+history>new.txt 
+ls -r >123.txt
+ls -a> new1.txt
+history 
+! 3 rrdgsr
+ls -l> new1.txt > new2.txt
+ ! 4 
+mkdir hellodir
+cd hellodir
+cd ..
+rm -r hellodir
+exit
+history
+!2
+!2 > pwd.txt

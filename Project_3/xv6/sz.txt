@@ -1,0 +1,82 @@
+Binary file kernel/bootblock.out matches
+kernel/bootmain.c:    readseg(va, ph->filesz, ph->offset);
+kernel/bootmain.c:    if(ph->memsz > ph->filesz)
+kernel/bootmain.c:      stosb(va + ph->filesz, 0, ph->memsz - ph->filesz);
+Binary file kernel/bootmain.o matches
+Binary file kernel/console.o matches
+kernel/elf.h:  uint filesz;
+kernel/elf.h:  uint memsz;
+kernel/exec.c:  uint argc, sz, sp, ustack[3+MAXARG+1];
+kernel/exec.c:  sz = PGSIZE;
+kernel/exec.c:  //sz = 0;
+kernel/exec.c:    if(ph.memsz < ph.filesz)
+kernel/exec.c:    cprintf("loading program from %d to %d, ph.va = %d ph.memsz = %d\n", sz, ph.va + ph.memsz, ph.va, ph.memsz);
+kernel/exec.c:    if((sz = allocuvm(pgdir, sz, ph.va + ph.memsz)) == 0)
+kernel/exec.c:    if(loaduvm(pgdir, (char*)ph.va, ip, ph.offset, ph.filesz) < 0)
+kernel/exec.c:  sz = PGROUNDUP(sz);
+kernel/exec.c:  if((sz = allocuvm(pgdir, sz, sz + PGSIZE)) == 0)
+kernel/exec.c:	cprintf("user stack is allocated from %d to %d\n",sz,sz + PGSIZE);
+kernel/exec.c:  sp = sz;
+kernel/exec.c:  proc->sz = sz;
+Binary file kernel/exec.o matches
+Binary file kernel/fs.o matches
+Binary file kernel/ide.o matches
+Binary file kernel/main.o matches
+kernel/mmu.h:#define PGROUNDUP(sz)  (((sz)+PGSIZE-1) & ~(PGSIZE-1))
+Binary file kernel/mp.o matches
+Binary file kernel/pipe.o matches
+kernel/proc.c:  p->sz = PGSIZE;
+kernel/proc.c:  uint sz;
+kernel/proc.c:  sz = proc->sz;
+kernel/proc.c:    if((sz = allocuvm(proc->pgdir, sz, sz + n)) == 0)
+kernel/proc.c:    if((sz = deallocuvm(proc->pgdir, sz, sz + n)) == 0)
+kernel/proc.c:  proc->sz = sz;
+kernel/proc.c:  if((np->pgdir = copyuvm(proc->pgdir, proc->sz)) == 0){
+kernel/proc.c:  np->sz = proc->sz;
+kernel/proc.h:  uint sz;                     // Size of process memory (bytes)
+Binary file kernel/proc.o matches
+Binary file kernel/spinlock.o matches
+kernel/syscall.c:  if(addr >= p->sz || addr+4 > p->sz)
+kernel/syscall.c:  if(addr >= p->sz)
+kernel/syscall.c:  ep = (char*)p->sz;
+kernel/syscall.c:  if((uint)i >= proc->sz || (uint)i+size > proc->sz)
+Binary file kernel/syscall.o matches
+Binary file kernel/sysfile.o matches
+kernel/sysproc.c:  addr = proc->sz;
+Binary file kernel/sysproc.o matches
+Binary file kernel/trap.o matches
+kernel/vm.c:// sz must be less than a page.
+kernel/vm.c:inituvm(pde_t *pgdir, char *init, uint sz)
+kernel/vm.c:  if(sz >= PGSIZE)
+kernel/vm.c:  memmove(mem, init, sz);
+kernel/vm.c:// and the pages from addr to addr+sz must already be mapped.
+kernel/vm.c:loaduvm(pde_t *pgdir, char *addr, struct inode *ip, uint offset, uint sz)
+kernel/vm.c:  //cprintf("addr = %d  sz = %d\n", (uint)addr, sz);
+kernel/vm.c:  for(i = 0; i < sz ; i += PGSIZE){
+kernel/vm.c:    if(sz - i < PGSIZE)
+kernel/vm.c:      n = sz - i;
+kernel/vm.c:// Allocate page tables and physical memory to grow process from oldsz to
+kernel/vm.c:// newsz, which need not be page aligned.  Returns new size or 0 on error.
+kernel/vm.c:allocuvm(pde_t *pgdir, uint oldsz, uint newsz)
+kernel/vm.c:  //cprintf("oldsz = %d newsz = %d\n", oldsz, newsz);
+kernel/vm.c:  if(newsz > USERTOP)
+kernel/vm.c:  if(newsz < oldsz)
+kernel/vm.c:    return oldsz;
+kernel/vm.c:  a = PGROUNDUP(oldsz);
+kernel/vm.c:  for(; a < newsz; a += PGSIZE){
+kernel/vm.c:      deallocuvm(pgdir, newsz, oldsz);
+kernel/vm.c:  //cprintf("oldsz = %d newsz = %d\n", oldsz, newsz);
+kernel/vm.c:  return newsz;
+kernel/vm.c:// Deallocate user pages to bring the process size from oldsz to
+kernel/vm.c:// newsz.  oldsz and newsz need not be page-aligned, nor does newsz
+kernel/vm.c:// need to be less than oldsz.  oldsz can be larger than the actual
+kernel/vm.c:deallocuvm(pde_t *pgdir, uint oldsz, uint newsz)
+kernel/vm.c:  if(newsz >= oldsz)
+kernel/vm.c:    return oldsz;
+kernel/vm.c:  a = PGROUNDUP(newsz);
+kernel/vm.c:  for(; a  < oldsz; a += PGSIZE){
+kernel/vm.c:  return newsz;
+kernel/vm.c:copyuvm(pde_t *pgdir, uint sz)
+kernel/vm.c:  for(i = PGSIZE; i < sz ; i += PGSIZE){
+kernel/vm.c:    //cprintf("sz = %d i = %d\n", sz, i);
+Binary file kernel/vm.o matches

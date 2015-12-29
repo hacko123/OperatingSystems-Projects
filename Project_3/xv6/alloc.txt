@@ -1,0 +1,12 @@
+kernel/defs.h:int             allocuvm(pde_t*, uint, uint);
+kernel/defs.h:int             deallocuvm(pde_t*, uint, uint);
+kernel/exec.c:    if((sz = allocuvm(pgdir, sz, ph.va + ph.memsz)) == 0)
+kernel/exec.c: //  if((sz = allocuvm(pgdir, sz, sz + PGSIZE)) == 0)
+kernel/exec.c:  if((sz = allocuvm(pgdir, USERTOP-PGSIZE, USERTOP)) == 0)
+kernel/exec.c:  // uint new_user_stk = allocuvm(pgdir, USERTOP-PGSIZE, USERTOP);
+kernel/proc.c:    if((sz = allocuvm(proc->pgdir, sz, sz + n)) == 0)
+kernel/proc.c:    if((sz = deallocuvm(proc->pgdir, sz, sz + n)) == 0)
+kernel/vm.c:allocuvm(pde_t *pgdir, uint oldsz, uint newsz)
+kernel/vm.c:      deallocuvm(pgdir, newsz, oldsz);
+kernel/vm.c:deallocuvm(pde_t *pgdir, uint oldsz, uint newsz)
+kernel/vm.c:  deallocuvm(pgdir, USERTOP, 0);
